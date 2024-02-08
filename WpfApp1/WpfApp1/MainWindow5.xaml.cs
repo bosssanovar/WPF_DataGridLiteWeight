@@ -16,11 +16,11 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow5 : Window
     {
         public ObservableCollection<Detail> Items { get; } = new ObservableCollection<Detail>();
 
-        public MainWindow()
+        public MainWindow5()
         {
             InitializeComponent();
 
@@ -70,15 +70,10 @@ namespace WpfApp1
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            var window = new MainWindow5();
+            var window = new MainWindow();
             window.Show();
 
             this.Close();
         }
-    }
-
-    public class Detail
-    {
-        public ReactivePropertySlim<bool> Val { get; } = new ReactivePropertySlim<bool>(true);
     }
 }
