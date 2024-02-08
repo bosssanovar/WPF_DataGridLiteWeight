@@ -18,7 +18,7 @@
             <Button Margin="5" Content="標準" IsEnabled="False"/>
             <Button Margin="5" Content="双方向仮想化" IsEnabled="True" Click="Button_Click"/>
             <Button Margin="5" Content="テンプレートの最適化" IsEnabled="True" Click="Button_Click_1"/>
-            <Button Margin="5" Content="通知方向" IsEnabled="True"/>
+            <Button Margin="5" Content="通知方向" IsEnabled="True" Click="Button_Click_2"/>
             <Button Margin="5" Content="ピクセル単位のスクロール" IsEnabled="True"/>
             <Button Margin="5" Content="非ObservableCollection" IsEnabled="True"/>
             <Button Margin="30, 5" Content="複合" IsEnabled="True"/>
@@ -32,225 +32,225 @@
                   ItemsSource="{Binding Items}"
                   HeadersVisibility="None">
             <DataGrid.Columns>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
 
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
-                <DataGridCheckBoxColumn/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
+                <DataGridCheckBoxColumn Binding="{Binding Val.Value}"/>
             </DataGrid.Columns>
         </DataGrid>
     </Grid>

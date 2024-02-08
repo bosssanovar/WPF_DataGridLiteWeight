@@ -16,15 +16,15 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow4 : Window
     {
         public ObservableCollection<Detail> Items { get; } = new ObservableCollection<Detail>();
 
-        public MainWindow()
+        public MainWindow4()
         {
             InitializeComponent();
 
-            for (int i = 0; i < 200; i++)
+            for(int i=0; i<200; i++)
             {
                 Items.Add(new Detail());
             }
@@ -38,7 +38,7 @@ namespace WpfApp1
 
             grid.Visibility = Visibility.Visible;
 
-            Dispatcher.InvokeAsync(new Action(() =>
+            Dispatcher.InvokeAsync(new Action(() => 
             {
                 Cursor = null;
             }), System.Windows.Threading.DispatcherPriority.ApplicationIdle);
@@ -62,15 +62,10 @@ namespace WpfApp1
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            var window = new MainWindow4();
+            var window = new MainWindow();
             window.Show();
 
             this.Close();
         }
-    }
-
-    public class Detail
-    {
-        public ReactivePropertySlim<bool> Val { get; } = new ReactivePropertySlim<bool>(true);
     }
 }
