@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using Reactive.Bindings;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -15,17 +16,17 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow3 : Window
+    public partial class MainWindow6 : Window
     {
-        public ObservableCollection<Object> Items { get; } = new ObservableCollection<Object>();
+        public Collection<Detail> Items { get; } = new Collection<Detail>();
 
-        public MainWindow3()
+        public MainWindow6()
         {
             InitializeComponent();
 
-            for(int i=0; i<200; i++)
+            for (int i = 0; i < 200; i++)
             {
-                Items.Add(new Object());
+                Items.Add(new Detail());
             }
         }
 
@@ -37,7 +38,7 @@ namespace WpfApp1
 
             grid.Visibility = Visibility.Visible;
 
-            Dispatcher.InvokeAsync(new Action(() => 
+            Dispatcher.InvokeAsync(new Action(() =>
             {
                 Cursor = null;
             }), System.Windows.Threading.DispatcherPriority.ApplicationIdle);
@@ -53,7 +54,7 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            var window = new MainWindow();
+            var window = new MainWindow3();
             window.Show();
 
             this.Close();
@@ -77,7 +78,7 @@ namespace WpfApp1
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
-            var window = new MainWindow6();
+            var window = new MainWindow();
             window.Show();
 
             this.Close();

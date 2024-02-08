@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="通知方向" Height="450" Width="800"
+        Title="通知方向" Height="500" Width="1200"
         WindowState="Maximized"
         DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}">
     <Grid Margin="5">
@@ -20,7 +20,7 @@
             <Button Margin="5" Content="テンプレートの最適化" IsEnabled="True" Click="Button_Click_1"/>
             <Button Margin="5" Content="通知方向" IsEnabled="False"/>
             <Button Margin="5" Content="ピクセル単位のスクロール" IsEnabled="True" Click="Button_Click_3"/>
-            <Button Margin="5" Content="非ObservableCollection" IsEnabled="True"/>
+            <Button Margin="5" Content="非ObservableCollection" IsEnabled="True" Click="Button_Click_4"/>
             <Button Margin="30, 5" Content="複合" IsEnabled="True"/>
         </StackPanel>
 

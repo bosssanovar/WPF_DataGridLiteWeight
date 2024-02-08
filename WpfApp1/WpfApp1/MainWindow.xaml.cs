@@ -75,6 +75,14 @@ namespace WpfApp1
 
             this.Close();
         }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            var window = new MainWindow6();
+            window.Show();
+
+            this.Close();
+        }
     }
 
     public class Detail
