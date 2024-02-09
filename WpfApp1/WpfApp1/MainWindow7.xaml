@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="FlyWeightパターン" Height="500" Width="1200"
+        Title="FlyWeightパターン" Height="500" Width="600" d:Width="2000"
         WindowState="Maximized"
         DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}">
     <Grid Margin="5">
@@ -22,6 +22,7 @@
             <Button Margin="5" Content="ピクセル単位のスクロール" IsEnabled="True" Click="Button_Click_3"/>
             <Button Margin="5" Content="非ObservableCollection" IsEnabled="True" Click="Button_Click_4"/>
             <Button Margin="5" Content="FlyWeightパターン" IsEnabled="False"/>
+            <Button Margin="5" Content="Max指定" IsEnabled="True" Click="Button_Click_6"/>
             <Button Margin="30, 5" Content="複合" IsEnabled="True"/>
         </StackPanel>
 

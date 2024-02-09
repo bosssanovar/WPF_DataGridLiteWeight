@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using Reactive.Bindings;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -15,11 +16,11 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow2 : Window
+    public partial class MainWindow8 : Window
     {
-        public ObservableCollection<Object> Items { get; } = new ObservableCollection<Object>();
+        public ObservableCollection<Detail> Items { get; } = new ObservableCollection<Detail>();
 
-        public MainWindow2()
+        public MainWindow8()
         {
             for (int i = 0; i < 200; i++)
             {
@@ -45,7 +46,7 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            var window = new MainWindow();
+            var window = new MainWindow2();
             window.Show();
 
             this.Close();
@@ -93,7 +94,7 @@ namespace WpfApp1
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            var window = new MainWindow8();
+            var window = new MainWindow();
             window.Show();
 
             this.Close();
