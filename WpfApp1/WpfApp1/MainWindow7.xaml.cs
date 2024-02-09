@@ -1,4 +1,5 @@
 ﻿using Reactive.Bindings;
+using System;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Text;
@@ -40,24 +41,13 @@ namespace WpfApp1
 
             for (int columnIndex = 0; columnIndex < 200; ++columnIndex)
             {
-                var rectangle = new FrameworkElementFactory(typeof(Rectangle));
-                rectangle.SetValue(Rectangle.HeightProperty, 10.0);
-                rectangle.SetValue(Rectangle.WidthProperty, 10.0);
-
-                if (columnIndex % 5 == 0)
-                {
-                    rectangle.SetValue(Rectangle.FillProperty, Brushes.LightSkyBlue);
-                }
-                else
-                {
-                    rectangle.SetValue(Rectangle.FillProperty, Brushes.Blue);
-                }
-
-                rectangle.SetValue(Rectangle.HorizontalAlignmentProperty, HorizontalAlignment.Center);
-                rectangle.SetValue(Rectangle.VerticalAlignmentProperty, VerticalAlignment.Center);
-
-                var cellTemplate = new DataTemplate(typeof(DataGridTemplateColumn));
-                cellTemplate.VisualTree = rectangle;
+                DataTemplate template = TemplateGenerator.CreateDataTemplate(
+                                            () =>
+                                            {
+                                                return GetContent();
+                                            }
+                                        );
+                var cellTemplate = template;
 
                 var column = new DataGridTemplateColumn();
                 column.CellTemplate = cellTemplate;
@@ -71,6 +61,22 @@ namespace WpfApp1
             {
                 Cursor = null;
             }), System.Windows.Threading.DispatcherPriority.ApplicationIdle);
+        }
+
+        Rectangle? content;
+        private Object GetContent()
+        {
+            if (content == null)
+            {
+                content = new Rectangle();
+                content.SetValue(Rectangle.HeightProperty, 10.0);
+                content.SetValue(Rectangle.WidthProperty, 10.0);
+                content.SetValue(Rectangle.FillProperty, Brushes.LightSkyBlue);
+                content.SetValue(Rectangle.HorizontalAlignmentProperty, HorizontalAlignment.Center);
+                content.SetValue(Rectangle.VerticalAlignmentProperty, VerticalAlignment.Center);
+            }
+
+            return content;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
