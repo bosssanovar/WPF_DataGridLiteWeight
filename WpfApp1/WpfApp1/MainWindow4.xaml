@@ -21,6 +21,7 @@
             <Button Margin="5" Content="通知方向" IsEnabled="False"/>
             <Button Margin="5" Content="ピクセル単位のスクロール" IsEnabled="True" Click="Button_Click_3"/>
             <Button Margin="5" Content="非ObservableCollection" IsEnabled="True" Click="Button_Click_4"/>
+            <Button Margin="5" Content="FlyWeightパターン" IsEnabled="True" Click="Button_Click_5"/>
             <Button Margin="30, 5" Content="複合" IsEnabled="True"/>
         </StackPanel>
 

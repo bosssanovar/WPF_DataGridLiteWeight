@@ -21,12 +21,12 @@ namespace WpfApp1
 
         public MainWindow2()
         {
-            InitializeComponent();
-
-            for(int i=0; i<200; i++)
+            for (int i = 0; i < 200; i++)
             {
-                Items.Add(new Object());
+                Items.Add(new Detail());
             }
+
+            InitializeComponent();
         }
 
         protected override void OnContentRendered(EventArgs e)
@@ -78,6 +78,14 @@ namespace WpfApp1
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             var window = new MainWindow6();
+            window.Show();
+
+            this.Close();
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            var window = new MainWindow7();
             window.Show();
 
             this.Close();
