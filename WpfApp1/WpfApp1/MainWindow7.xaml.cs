@@ -11,6 +11,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace WpfApp1
 {
@@ -37,11 +38,30 @@ namespace WpfApp1
 
             Cursor = Cursors.Wait;
 
-            for (int i = 0; i < 200; ++i)
+            for (int columnIndex = 0; columnIndex < 200; ++columnIndex)
             {
-                var column = new DataGridTextColumn();
-                column.Header = $"{i}";
-                column.Width = new DataGridLength(18);
+                var rectangle = new FrameworkElementFactory(typeof(Rectangle));
+                rectangle.SetValue(Rectangle.HeightProperty, 10.0);
+                rectangle.SetValue(Rectangle.WidthProperty, 10.0);
+
+                if (columnIndex % 5 == 0)
+                {
+                    rectangle.SetValue(Rectangle.FillProperty, Brushes.LightSkyBlue);
+                }
+                else
+                {
+                    rectangle.SetValue(Rectangle.FillProperty, Brushes.Blue);
+                }
+
+                rectangle.SetValue(Rectangle.HorizontalAlignmentProperty, HorizontalAlignment.Center);
+                rectangle.SetValue(Rectangle.VerticalAlignmentProperty, VerticalAlignment.Center);
+
+                var cellTemplate = new DataTemplate(typeof(DataGridTemplateColumn));
+                cellTemplate.VisualTree = rectangle;
+
+                var column = new DataGridTemplateColumn();
+                column.CellTemplate = cellTemplate;
+
                 grid.Columns.Add(column);
             }
 
@@ -50,78 +70,7 @@ namespace WpfApp1
             Dispatcher.InvokeAsync(new Action(() =>
             {
                 Cursor = null;
-
-                SetScrollEvent();
             }), System.Windows.Threading.DispatcherPriority.ApplicationIdle);
-        }
-
-        private void EditDataGrid(object sender, RoutedEventArgs e)
-        {
-            // 行列数
-            int rowCount = grid.Items.Count;
-            int columnCount = grid.Columns.Count;
-
-            for (int rowIndex = 0; rowIndex < rowCount; ++rowIndex)
-            {
-                // データグリッドの行オブジェクトを取得します。
-                var row = grid.ItemContainerGenerator.ContainerFromIndex(rowIndex) as DataGridRow;
-                // 行オブジェクトが取得できない場合
-                if (row is null)
-                {
-                    // 画面に表示されていないセルはnullとなる
-                    continue;
-                }
-
-                for (int columnIndex = 0; columnIndex < columnCount; ++columnIndex)
-                {
-                    var cell = GetCell(columnIndex, row);
-                    if( cell is null)
-                    {
-                        // 画面に表示されていないセルはnullとなる
-                        continue;
-                    }
-
-                    if (rowIndex % 5 == 0 && columnIndex % 5 == 0)
-                    {
-                        cell.Background = Brushes.Blue;
-                    }
-                    else
-                    {
-                        cell.Background = Brushes.Transparent;
-                    }
-                }
-            }
-        }
-
-        private DataGridCell? GetCell(int columnIndex, DataGridRow row)
-        {
-            // データグリッドのセルオブジェクトを取得します。
-            var content = grid.Columns[columnIndex].GetCellContent(row);
-            if (content is null)
-            {
-                // 画面に表示されていないセルはnullとなる
-                return null;
-            }
-            var cell = content.Parent as DataGridCell;
-            // データグリッドのセルオブジェクトが取得できない場合
-            if (cell is null)
-            {
-                // 画面に表示されていないセルはnullとなる
-                return null;
-            }
-
-            return cell;
-        }
-
-        private void SetScrollEvent()
-        {
-            Decorator? child = VisualTreeHelper.GetChild(this.grid, 0) as Decorator;
-            if (child is null) return;
-
-            ScrollViewer? sc = child.Child as ScrollViewer;
-            if (sc is null) return;
-
-            sc.ScrollChanged += new ScrollChangedEventHandler(EditDataGrid);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
