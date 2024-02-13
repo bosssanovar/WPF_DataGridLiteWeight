@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="標準" Height="500" Width="1200"
+        Title="標準" Height="500" Width="600" d:Width="2000"
         WindowState="Maximized"
         DataContext="{Binding RelativeSource={RelativeSource Mode=Self}}">
     <Grid Margin="5">
@@ -23,7 +23,8 @@
             <Button Margin="5" Content="非ObservableCollection" IsEnabled="False"/>
             <Button Margin="5" Content="FlyWeightパターン" IsEnabled="True" Click="Button_Click_5"/>
             <Button Margin="5" Content="Max指定" IsEnabled="True" Click="Button_Click_6"/>
-            <Button Margin="30, 5" Content="複合" IsEnabled="True"/>
+            <Button Margin="30, 5, 5, 5" Content="複合" IsEnabled="True" Click="Button_Click_7"/>
+            <Button Margin="5" Content="複合(最大)" IsEnabled="True"/>
         </StackPanel>
 
         <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Text="DataGrid表示初期化中..." FontSize="20"/>
