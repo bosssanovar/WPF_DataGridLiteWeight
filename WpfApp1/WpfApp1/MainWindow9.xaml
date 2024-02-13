@@ -24,7 +24,7 @@
             <Button Margin="5" Content="FlyWeightパターン" IsEnabled="True" Click="Button_Click_5"/>
             <Button Margin="5" Content="Max指定" IsEnabled="True" Click="Button_Click_6"/>
             <Button Margin="30, 5, 5, 5" Content="複合" IsEnabled="False"/>
-            <Button Margin="5" Content="複合(最大)" IsEnabled="True"/>
+            <Button Margin="5" Content="複合(最大)" IsEnabled="True" Click="Button_Click_8"/>
         </StackPanel>
 
         <TextBlock Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Text="DataGrid表示初期化中..." FontSize="20"/>

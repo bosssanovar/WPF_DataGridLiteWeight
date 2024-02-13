@@ -16,13 +16,13 @@ namespace WpfApp1
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow8 : Window
+    public partial class MainWindow10 : Window
     {
         public ObservableCollection<Detail> Items { get; } = new ObservableCollection<Detail>();
 
-        public MainWindow8()
+        public MainWindow10()
         {
-            for (int i = 0; i < 200; i++)
+            for (int i = 0; i < 640; i++)
             {
                 Items.Add(new Detail());
             }
@@ -94,7 +94,7 @@ namespace WpfApp1
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
-            var window = new MainWindow();
+            var window = new MainWindow8();
             window.Show();
 
             this.Close();
@@ -102,7 +102,7 @@ namespace WpfApp1
 
         private void Button_Click_7(object sender, RoutedEventArgs e)
         {
-            var window = new MainWindow9();
+            var window = new MainWindow();
             window.Show();
 
             this.Close();
@@ -110,7 +110,7 @@ namespace WpfApp1
 
         private void Button_Click_8(object sender, RoutedEventArgs e)
         {
-            var window = new MainWindow10();
+            var window = new MainWindow9();
             window.Show();
 
             this.Close();

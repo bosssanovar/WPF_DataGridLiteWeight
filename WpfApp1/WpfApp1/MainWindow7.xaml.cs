@@ -142,5 +142,13 @@ namespace WpfApp1
 
             this.Close();
         }
+
+        private void Button_Click_8(object sender, RoutedEventArgs e)
+        {
+            var window = new MainWindow10();
+            window.Show();
+
+            this.Close();
+        }
     }
 }
